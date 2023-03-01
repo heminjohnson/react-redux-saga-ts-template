@@ -17,21 +17,11 @@ function App(): JSX.Element {
     dispatch(counterActions.decrement());
   };
 
-  const incrementAsync = (): void => {
-    dispatch(counterActions.incrementAsync());
-  };
-
-  const decrementAsync = (): void => {
-    dispatch(counterActions.decrementAsync());
-  };
-
   return (
     <div className="app">
       <Counter
         onIncrement={increment}
         onDecrement={decrement}
-        onIncrementAsync={incrementAsync}
-        onDecrementAsync={decrementAsync}
         value={value}
       />
       react-redux-saga-ts

@@ -21,11 +21,6 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action: PayloadAction<number>) => {
       state.value += action.payload;
     },
-    incrementAsync: (state) => {},
-    decrementAsync: (state) => {},
-    incrementByAmountAsync: (state, action: PayloadAction<number>) => {},
-    incrementByAmountAsyncSuccess: (state) => {},
-    incrementByAmountAsyncFailure: (state) => {},
   },
 });
 
